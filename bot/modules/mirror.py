@@ -74,6 +74,7 @@ class MirrorListener:
             size = download.size_raw()
             if name == "None" or self.isQbit or not ospath.exists(f'{DOWNLOAD_DIR}{self.uid}/{name}'):
                 name = listdir(f'{DOWNLOAD_DIR}{self.uid}')[-1]
+            name = name.replace("http://www.1TamilMV.cloud", "@KaipullaVadiveluOffl").replace("www.tamilblasters.com", "@KaipullaVadiveluOffl")
             m_path = f'{DOWNLOAD_DIR}{self.uid}/{name}'
         if self.isZip:
             try:
